@@ -320,14 +320,23 @@ body {
   to { opacity: 1; }
 }
 @media (max-width: 600px) {
-  .slide-image {
-    width: 100%;         /* Make it fill the screen */
+  .photo-gallery {
+    max-width: 100%;
     height: auto;
-    max-width: 100%;     /* Remove max limit */
+    padding: 0 10px;
+  }
+
+  .slide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .gallery-container {
     padding: 0;
-    margin: 0 auto;      /* Center it */
   }
 }
+
 
 /* Social media icons below gallery */
 .social-media-links {
