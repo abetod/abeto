@@ -1,3 +1,4 @@
+
 /* Reset and Global Styles */
 * {
   margin: 0;
@@ -181,6 +182,7 @@ body {
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+
 .about-section h3 {
   font-size: 24px;
   margin-bottom: 10px;
@@ -235,7 +237,6 @@ body {
     font-size: 13px !important;
   }
 }
-
 /* Photography Section */
 #photography {
   padding: 80px 10%;
@@ -243,6 +244,13 @@ body {
   text-align: center;
 }
 
+/* Section title (already styled globally, but include if needed) */
+#photography .section-title {
+  color: #871036;
+  margin-bottom: 30px;
+}
+
+/* Gallery Container */
 .photo-gallery {
   display: flex;
   justify-content: center;
@@ -268,21 +276,6 @@ body {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-
-/* Improved mobile responsiveness for slide images */
-@media (max-width: 600px) {
-  .slide img {
-    width: 100vw;
-    height: auto;
-    max-height: 70vh;
-    object-fit: cover;
-  }
-
-  .photo-gallery {
-    max-width: 100%;
-    margin: 10px auto;
-  }
 }
 
 /* Navigation arrows */
@@ -326,6 +319,15 @@ body {
   from { opacity: 0.5; }
   to { opacity: 1; }
 }
+@media (max-width: 600px) {
+  .slide-image {
+    width: 100%;         /* Make it fill the screen */
+    height: auto;
+    max-width: 100%;     /* Remove max limit */
+    padding: 0;
+    margin: 0 auto;      /* Center it */
+  }
+}
 
 /* Social media icons below gallery */
 .social-media-links {
@@ -354,4 +356,265 @@ body {
 .social-icons a:hover img {
   transform: scale(1.2);
   opacity: 0.8;
+}
+/* Portrait Gallery Section */
+#portrait-gallery {
+  padding: 60px 10%;
+  background-color: #fdfdfd;
+  text-align: center;
+}
+
+.portrait-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.portrait-item {
+  width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.portrait-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portrait-link:hover {
+  background-color: rgb(19, 102, 30);
+}
+
+/* Web Development Section */
+#webdev {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  border-radius: 10px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card img:hover {
+  transform: scale(1.05);
+}
+
+.project-card h3 {
+  font-size: 20px;
+  color: #871036;
+  margin: 15px;
+  text-align: center;
+}
+
+.project-card p {
+  font-size: 16px;
+  color: #555;
+  margin: 0 15px 15px;
+  text-align: center;
+}
+
+.project-link {
+  display: block;
+  margin: 0 15px 15px;
+  padding: 12px 0;
+  background-color: #871036;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: rgb(19, 102, 30);
+}
+/* FAQ Section Wrapper */
+#faq {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Section Title */
+#faq .section-title {
+  margin-bottom: 40px;
+}
+
+/* FAQ Layout */
+.faq-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+/* Two columns for questions */
+.faq-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Each Question Block */
+.faq-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+/* Question Button */
+.faq-question {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  padding: 8px 0;
+  transition: color 0.3s;
+}
+
+.faq-question.active {
+  color: #871036;
+}
+
+.faq-question:hover {
+  color: rgb(19, 102, 30);
+}
+
+/* Answer Content */
+.faq-answer {
+  display: none;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: justify;
+  text-indent: 12px;
+  padding-top: 6px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faq-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+/* Contact Section Wrapper */
+#contact {
+  background-color: #f4f4f4;
+  padding: 80px 20px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Title */
+#contact .section-title {
+  margin-bottom: 40px;
+}
+
+/* Form Styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #444;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #871036;
+  box-shadow: 0 0 5px rgba(135, 16, 54, 0.3);
+  outline: none;
+}
+
+/* Submit Button */
+.submit-button {
+  padding: 14px;
+  background-color: #871036;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-button:hover {
+  background-color: rgb(19, 102, 30);
+  transform: scale(1.05);
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+  #contact {
+    padding: 60px 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+
+  .submit-button {
+    font-size: 15px;
+  }
 }
