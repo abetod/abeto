@@ -663,3 +663,56 @@ body {
 .package-card.popular {
     border: 2px solid black;
 }
+.packages-page {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.packages-page h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #777;
+  margin-bottom: 50px;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.package-card {
+  border: 1px solid #e0e0e0;
+  padding: 40px 25px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.package-card h2 {
+  font-size: 1.8rem;
+}
+
+.price {
+  font-size: 2.2rem;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.package-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.package-card ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.featured {
+  border: 2px solid #000;
+}
