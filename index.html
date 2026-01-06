@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Abeto Photography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="abeto.css">
+    <link rel="stylesheet" href="package.css">
     <script defer src="abeto.js"></script>
-    
-
-
 </head>
 <body>
     <header>
@@ -21,55 +22,14 @@
     </div>
     <ul id="nav-menu">
         <li><a href="#about">About Me</a></li>
-        <li><a href="#photography">Photography</a></li>
-        <li><a href="packages.html">Packages</a></li>
+        <li><a href="packages.html">Photography Packages</a></li>
         <li><a href="#webdev">Web Development</a></li>
-        <li><a href="#contact">Contact Us</a></li>
     </ul>
 </nav>
     </header>
     
     <section id="hero">
         <h1></h1>
-    </section>
-
-    <div class="section-divider"></div>
-    
-    <section id="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-container">
-            <div class="about-column">
-                <div class="about-section">
-                    <h3>Skills</h3>
-                    <ul>
-                        <li>Web Development (HTML, CSS, JavaScript) and Wordpress, Squarespace</li>
-                        <li>Graphic Design & Video Editing</li>
-                        <li>Digital Marketing & SEO</li>
-                        <li>Content Creation & Branding</li>
-                        <li>Photography and Videography</li>
-                    </ul>
-                </div>
-                <div class="about-section">
-                    <h3>Job Experience</h3>
-                    <ul>
-                        <li>Tourism Promotion & Digital Marketing Specialist - Ethiopian Ministry of Tourism; 2015-2023</li>
-                        <li>Volunteer Web Developer - River Nile Learning Center, Australia</li>
-                    </ul>
-                </div>
-                <div class="about-section">
-                    <h3>Education</h3>
-                    <ul>
-                        <li>Msc Computer Science - City University of London (Ongoing)</li>
-                        <li>BA in History & Heritage Management - Samara University, Ethiopia</li>
-                        <li>Advanced Diploma in Digital Marketing - Alison Academy</li>
-                        <li>Front-End Web Development - RMIT University</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="about-column about-portrait">
-                <img src="Images/Abe about.jpg" alt="My Portrait">
-            </div>
-        </div>
     </section>
 
     <div class="section-divider"></div>
@@ -103,50 +63,7 @@
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
         </div>
-    </section>
-
-<section id="packages">
-    <h2 class="section-title">Photography Packages</h2>
-
-    <div class="packages-container">
-
-        <div class="package-card">
-            <h3>Celebration Moments</h3>
-            <p class="package-price">$180</p>
-            <ul>
-                <li>Up to 1 hour coverage</li>
-                <li>15 professionally edited images</li>
-                <li>Online gallery (Google Drive)</li>
-                <li>Delivery within 14 days</li>
-            </ul>
-            <a href="#contact" class="package-btn">Book Now</a>
-        </div>
-
-        <div class="package-card popular">
-            <h3>Event Highlights</h3>
-            <p class="package-price">$320</p>
-            <ul>
-                <li>Up to 2 hours coverage</li>
-                <li>30 professionally edited images</li>
-                <li>Social-media-ready versions</li>
-                <li>Delivery within 10–14 days</li>
-            </ul>
-            <a href="#contact" class="package-btn">Most Popular</a>
-        </div>
-
-        <div class="package-card">
-            <h3>Full Story</h3>
-            <p class="package-price">$480</p>
-            <ul>
-                <li>3 hours coverage</li>
-                <li>50+ edited images</li>
-                <li>Priority editing</li>
-                <li>Delivery within 7–10 days</li>
-            </ul>
-            <a href="#contact" class="package-btn">Book Now</a>
-        </div>
-
-    </div>
+    
 </section>
 
 
@@ -159,7 +76,7 @@
             <img src="Images/Kal.gif" alt="Portrait 2">
           </div>
           <div class="portrait-item">
-            <img src="Images/Lela.gif" alt="Portrait 2">
+            <img src="Images/Hirut.jpg" alt="Portrait 2">
           </div>
           <!-- Add more portrait-item divs as needed -->
         </div>
@@ -173,32 +90,7 @@
         </div>
     </div>
 
-    <div class="section-divider"></div>
-
-    <section id="webdev">
-        <h2 class="section-title">Web Development</h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <img src="Images/2 balatasar.jpg" alt="Project 1 Screenshot">
-                <h3>Baltasar Tour & Travel</h3>
-                <p>A tour operation company based in Germany and Ethiopia.</p>
-                <a href="https://baltasartravel.com/" target="_blank" class="project-link">View Project</a>
-            </div>
-            <div class="project-card">
-                <img src="Images/Ethio.jpg" alt="Project 2 Screenshot">
-                <h3>Ethiopian Community Victoria</h3>
-                <p>The association of Ethiopians living in Victoria, Australia.</p>
-                <a href="https://ethiopiancommunity.org.au/" target="_blank" class="project-link">View Project</a>
-            </div>
-            <div class="project-card">
-                <img src="Images/river nile.jpg" alt="Project 3 Screenshot">
-                <h3>River Nile Learning Center</h3>
-                <p>A non-profit organization based in Melbourne, Australia.</p>
-                <a href="https://www.rnlc.org.au/" target="_blank" class="project-link">View Project</a>
-            </div>
-        </div>
-    </section>
-
+   
     <div class="section-divider"></div>
 
 <section id="faq" style="background-color: #f9f9f9; padding: 60px 20px; border-radius: 10px;">
@@ -252,7 +144,7 @@
             <div class="faq-item">
                 <button class="faq-question">How will I receive the image?</button>
                 <div class="faq-answer">
-                    <p>Images will be sent to you via email. Once edited, I will upload onto Google Drive and share a viewable link with you. From there, all you will need to do is simply download and save your images onto a computer or hard drive.</p>
+                    <p>Edited and retouched images will be provided with a USB flash disk</p>
                 </div>
             </div>
         </div>
@@ -305,7 +197,7 @@
        
     </div>
     <div class="footer-copyright">
-        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+        <p>&copy; 2026 Abeto Photography. All rights reserved.</p>
     </div>
 </footer>
 </body>

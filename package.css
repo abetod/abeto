@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #222;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* ===== HEADER ===== */
+.header {
+    background: #000;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 18px;
+    color: #ccc;
+}
+
+/* ===== PACKAGES ===== */
+.packages {
+    margin: 80px auto;
+}
+
+.package-card {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 70px;
+    align-items: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.package-image img {
+    width: 100%;
+    max-width: 420px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.package-content {
+    text-align: left; /* ✅ FORCE LEFT ALIGN */
+}
+
+.package-content h2 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* ===== FIXED LIST ALIGNMENT (IMPORTANT) ===== */
+.package-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.package-content ul li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    text-align: left;
+    margin-bottom: 14px;
+    line-height: 1.6;
+}
+
+/* Optional clean bullet */
+.package-content ul li::before {
+    content: "•";
+    font-size: 20px;
+    line-height: 1;
+    margin-top: 3px;
+    color: #000;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #444;
+}
+
+/* ===== CUSTOM PACKAGE ===== */
+.custom-package {
+    text-align: center;
+    background: #000;
+    color: #fff;
+    padding: 60px 30px;
+    border-radius: 16px;
+}
+
+.custom-package h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.custom-package p {
+    max-width: 700px;
+    margin: 0 auto 25px;
+    font-size: 18px;
+    color: #ddd;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    text-align: center;
+    padding: 30px;
+    background: #111;
+    color: #aaa;
+    margin-top: 80px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .package-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .package-content {
+        text-align: left; /* ✅ OVERRIDE MOBILE CENTERING */
+    }
+
+    .package-image img {
+        height: auto;
+    }
+}
