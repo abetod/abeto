@@ -63,15 +63,28 @@ body {
 }
 
 .logo {
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  cursor: pointer;
+    color: #FFD700; /* Light yellow color */
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none; /* Removes underline */
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+    font-family: 'Playfair Display', serif;
 }
 
 .logo:hover {
-  color: #ffcc00;
+    color: #FFA500; /* Darker yellow/orange on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.logo a {
+    color: inherit; /* Inherits color from .logo */
+    text-decoration: none; /* Removes underline from link */
+}
+
+.logo a:hover {
+    color: inherit; /* Keeps hover color consistent */
+    text-decoration: none; /* Ensures no underline on hover */
 }
 
 .menu-toggle {
@@ -805,4 +818,80 @@ body {
   .about-text p {
     font-size: 1rem;
   }
+}
+/* =========================
+   FOOTER STYLES
+========================= */
+
+.footer-container {
+    background-color: #222;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.footer-social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.footer-copyright p {
+    margin: 0;
+}
+
+/* Responsive footer */
+@media (max-width: 768px) {
+    .footer-container {
+        padding: 30px 15px;
+    }
+    
+    .footer-social-icons {
+        gap: 15px;
+    }
+    
+    .footer-social-icons img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 25px 10px;
+    }
+    
+    .footer-social-icons {
+        gap: 12px;
+    }
+    
+    .footer-social-icons img {
+        width: 32px;
+        height: 32px;
+    }
 }
