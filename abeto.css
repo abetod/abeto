@@ -474,6 +474,18 @@ body {
     display: block;
 }
 
+/* Make the last item landscape */
+.portrait-item.landscape {
+    width: 600px; /* Wider */
+    height: 400px; /* Fixed height for landscape aspect ratio */
+}
+
+.portrait-item.landscape img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crop image to fill container */
+}
+
 .portrait-link:hover {
     background-color: rgb(19, 102, 30);
 }
