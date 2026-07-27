@@ -476,18 +476,33 @@ body {
 
 /* Make the last item landscape */
 .portrait-item.landscape {
-    width: 600px; /* Wider */
-    height: 400px; /* Fixed height for landscape aspect ratio */
+    width: 600px;
+    height: 400px;
 }
 
 .portrait-item.landscape img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Crop image to fill container */
+    object-fit: cover;
 }
 
-.portrait-link:hover {
-    background-color: rgb(19, 102, 30);
+/* ===== MOBILE RESPONSIVE ===== */
+@media only screen and (max-width: 768px) {
+    .portrait-item {
+        width: 90%; /* Make all images responsive on mobile */
+        max-width: 400px;
+    }
+
+    .portrait-item.landscape {
+        width: 90%; /* Make landscape image fill the screen */
+        max-width: 600px;
+        height: auto; /* Remove fixed height on mobile */
+    }
+
+    .portrait-item.landscape img {
+        height: auto; /* Allow image to scale naturally */
+        object-fit: contain; /* Show full image */
+    }
 }
 
 /* Web Development Section */
